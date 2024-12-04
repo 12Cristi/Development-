@@ -1,0 +1,90 @@
+* {
+	color: darkred;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+}
+
+body {
+	background-color: #878387;
+}
+
+h1 {
+	color: blue;
+}
+
+.title {
+	color: aliceblue;
+}
+
+#unique-title {
+	color: aqua;
+}
+
+#unique-title {
+	color: lightcoral;
+}
+
+/*  
+    inline specificity     ==>(1,0,0,0)
+    tags spcigicity        ==>(0,0,0,1)
+    class cpecificity      ==>(0,0,1,0)
+    id specificity         ==>(0,1,0,0)
+    * specificity          ==>(0,0,0,0)
+*/
+
+.container p {
+	font-size: 16px;
+}
+
+p.container-title {
+	font-size: 20px;
+}
+
+#section1 .container .container-title {
+	font-size: 24px;
+}
+
+[data-role="title3"] {
+	font-size: 90px;
+}
+
+/* descendent selector*/
+
+ul li {
+	color: green;
+}
+
+/* direct child selector*/
+ul > li.item2 {
+	color: orange;
+}
+
+li > p.subtitle {
+	color: purple;
+}
+
+/*
+    1em ==> by default 16px; 
+*/
+
+.font-container > p {
+	color: #231223;
+	font-size: 1rem;
+}
+
+.font-container-2 {
+	font-size: 25px;
+
+	> p {
+		font-size: 1em;
+		font-weight: 400;
+	}
+
+	div {
+		background-color: #231223;
+		color: #fff;
+	}
+}

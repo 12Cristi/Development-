@@ -1,0 +1,71 @@
+* {
+    color: rgb(71, 152, 144);
+    font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  
+}
+
+
+h1 {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.title {
+    color: aqua;
+}
+
+#title {
+    color: blueviolet;
+}
+
+#title {
+    color: yellow;
+}
+
+#title {
+    color: red;
+}
+
+.container p{
+    font-size: 16px;
+}
+
+/*  
+    inline specificity     ==>(1,0,0,0)
+    tags spcigicity        ==>(0,0,0,1)
+    class cpecificity      ==>(0,0,1,0)
+    id specificity         ==>(0,1,0,0)
+*/
+
+
+p.container-title {
+    font-size: 20px ;
+}
+
+[data-role='title3'] {
+    font-size: 90px;
+}
+
+/* descdendant selector */
+ul li {
+    color: green;
+}
+
+/* direct child selector */
+ul > li.item {
+    color: orange;
+}
+
+
+li > p.subtitle {
+    color: rgba(128, 128, 128, 1);
+}
+
+.font-container{ 
+    color: 9b0840
+}
+
+body {
+    background-color: rgb(221, 235, 214);
+}
+

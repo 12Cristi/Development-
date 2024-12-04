@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+}
+
+.box1 {
+    background-color: yellow;
+    height: 100vh;
+}
+
+.box2 {
+    background-color: salmon;
+}
+
+.box3 {
+    background-color: aliceblue;
+    height: 100vh;
+}

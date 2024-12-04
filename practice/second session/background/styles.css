@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+}
+
+.box1 {
+    background-color: aqua;  
+     height: 100vh;
+}
+
+.box2 {
+    background-color: blueviolet;
+}

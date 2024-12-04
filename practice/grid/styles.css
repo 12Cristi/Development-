@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+	display: grid;
+    width: 80vh;
+    height: 100vh;
+	grid-template-columns: 200px 1fr 500px;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "aside main main"
+    ". . article"
+    "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+}
+
+.header {
+	grid-area: header;
+	background-color: antiquewhite;
+    padding: 1rem 3rem;
+}
+
+.section {
+    grid-area: section;
+    background-color: rgb(55, 255, 0);
+    padding: 1rem 3rem;
+}
+
+.aside {
+	grid-area: aside;
+	background-color: aqua;
+    padding: 1rem 3rem;
+}
+.main {
+	grid-area: main;
+	background-color: rgb(189, 224, 224);
+    padding: 1rem 3rem;
+}
+
+.article {
+    background-color: bisque;
+    grid-area: article;
+    padding: 1rem 3rem;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: salmon;
+    padding: 1rem 3rem;
+}
