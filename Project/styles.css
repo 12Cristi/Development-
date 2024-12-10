@@ -9,6 +9,7 @@
 	--bg-color-footer: #2a2e3a;
 	--content-spacing: 1rem 20rem;
 	--footer-spacing: 3rem 20rem 2rem;
+	--main-content-spacing: 1.75rem;
 }
 body {
 	margin: 0;
@@ -66,7 +67,7 @@ body {
 }
 
 .icon {
-	font-size: 0.94rem;
+	font-size: 0.94rem;	
 	margin-right: 1rem;
 	width: 1rem;
 	height: 1rem;
@@ -100,6 +101,21 @@ body {
 	column-gap: 1.25rem;
 }
 
+div p {
+	margin-bottom: var(--main-content-spacing);
+	font-weight: 300;
+}
+
+div > h2 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+ol > li {
+	margin-top: 0;
+	margin-bottom: var(--main-content-spacing);
+}
+
 .side-menu {
 	grid-area: side-menu;
 }
@@ -109,16 +125,34 @@ body {
 	position: sticky;
 	top: 10rem;
 	color: var(--text-color-secondary);
+}
 
-	a {
-		text-decoration: none;
-		color: var(--text-color-secondary);
-		line-height: var(--line-height);
-	}
+
+.side-menu-title {
+	font-size: 1.25rem;
+    font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color-secondary);
+	line-height: var(--line-height);
+}
+
+p a {
+	text-decoration: underline;
+}
+
+p a:hover {
+	color: var(--color-primary);
 }
 
 .main {
 	grid-area: main;
+}
+.main-highlight {
+	font-size: 2.125rem;
+	line-height: 3rem;
 }
 
 .button {
@@ -198,6 +232,47 @@ h1 {
 	background-color: var(--bg-color-secondary);
 }
 
+.author-testimonials {
+	height: 142px;
+    align-items: center;
+	background-color: var(--bg-color-secondary);
+	padding: var(--content-spacing);
+	display: flex;
+
+	.image-logo{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+	}
+
+	.author-content{
+		padding-left: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image-logo-author {
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;	
+	}
+
+	.image-logo-title {
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+	
+	.author-description {
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+.comment {
+	background-color: var(--bg-color-primary);
+	margin: 40px 0;
+	padding: var(--content-spacing);
+}
 .articles-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -205,9 +280,10 @@ h1 {
 	justify-content: center;
 }
 .card-section {
-  display: flex;
-  gap: 1.5rem;
+	display: flex;
+	gap: 1.5rem;
 }
+
 .card {
 	display: inline-block;
 	min-height: 400px;
@@ -220,7 +296,7 @@ h1 {
 
 .card-image {
 	width: 380px;
-  height: 250px;
+	height: 250px;
 	gap: 1rem;
 }
 
@@ -239,12 +315,6 @@ h1 {
 	font-size: 1.125rem;
 	font-weight: 700;
 	padding-bottom: 1rem;
-}
-
-.card-avatar-author {
-	margin: 0;
-	font-weight: 300;
-	color: var(--text-color-tertiary);
 }
 
 .footer-container {
